@@ -1,0 +1,9 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "commonjs",
+    "strictNullChecks": true,
+    "removeComments": false,
+  },
+  "include": ["**/*.ts"]
+}
