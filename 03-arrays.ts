@@ -4,6 +4,9 @@ let myFavShows2: Array<string> = ["The X-Files", "Futurama", "Black Sails"]; // 
 myFavShows.push("Rome");
 console.log(myFavShows); // ["The X-Files", "Futurama", "Black Sails", "Rome"]
 // myFavShows.push(4); // throws error
+let randomArr = ["Hey", 23, "Bye"]; // infers string or number type, same as:
+let randomArr2: (string | number)[] = ["Hey", 23, "Bye"]; 
+// randomArr.push(true); // error
 
 // ****** Multi-dimensional arrays **********
 let myTeam: string[][] = [["Teodosic", "Raül López"], ["Mumbrú", "Todorovic"]];

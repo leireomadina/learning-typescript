@@ -1,11 +1,10 @@
-"use strict";
 // ******* Type Inferences *******
 const myName = "Leire";
 let myCats = 0;
 // myCats = "Rengar"; // throws error: can't reassign a variable to a value of a different type
 const areUnicornReal = false;
 let sentence = `My name is ${myName} and I have ${myCats} cats.`;
-let card = "Q"; // two types with OR operator
+let card = "Q"; // two possible types with OR operator
 card = 4;
 let random; // any type
 random = "whatever!";

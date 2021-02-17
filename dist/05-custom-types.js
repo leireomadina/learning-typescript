@@ -1,4 +1,3 @@
-"use strict";
 // ****** Enums **********
 // Use enums when we need to enumerate all possible values a variable can have
 var ironMaidenInstruments;

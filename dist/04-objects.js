@@ -1,4 +1,3 @@
-"use strict";
 // ****** Objects **********
 let streamersInAndorra = [
     {
@@ -20,6 +19,7 @@ let streamersInAndorra = [
         },
     },
 ];
+// streamersInAndorra.followers = 34555; // error
 function introduceStreamers(personObject) {
     let output = "";
     output += `${personObject.name} has ${personObject.age} years old and lives in Andorra while playing ${personObject.games.name}. `;
@@ -29,3 +29,12 @@ function introduceStreamers(personObject) {
     console.log(output);
 }
 console.log(streamersInAndorra.forEach(introduceStreamers));
+const frontender = {
+    name: "Risingdana",
+    stack: ["JavaScript ES6", "React", "SASS", "HTML5"],
+    remote: true
+};
+frontender.age = 20;
+console.table(frontender);
+
+// ****** Desestructuring objects **********

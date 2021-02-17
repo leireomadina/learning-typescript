@@ -1,10 +1,12 @@
-"use strict";
 // ****** Array Type Inference **********
 let myFavShows = ["The X-Files", "Futurama", "Black Sails"];
 let myFavShows2 = ["The X-Files", "Futurama", "Black Sails"]; // another syntax
 myFavShows.push("Rome");
 console.log(myFavShows); // ["The X-Files", "Futurama", "Black Sails", "Rome"]
 // myFavShows.push(4); // throws error
+let randomArr = ["Hey", 23, "Bye"]; // infers string or number type, same as:
+let randomArr2 = ["Hey", 23, "Bye"];
+// randomArr.push(true); // error
 // ****** Multi-dimensional arrays **********
 let myTeam = [["Teodosic", "Raül López"], ["Mumbrú", "Todorovic"]];
 let mpvCandidates = []; // no problem

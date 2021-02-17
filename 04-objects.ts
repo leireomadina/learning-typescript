@@ -3,6 +3,7 @@
 let streamersInAndorra: {
   name: string;
   age: number;
+  nationality?: string, // optional
   games: { name: string; isToxic: boolean };
 }[] = [
   {
@@ -25,6 +26,8 @@ let streamersInAndorra: {
   },
 ];
 
+// streamersInAndorra.followers = 34555; // error
+
 function introduceStreamers(personObject: {
   name: string;
   age: number;
@@ -39,3 +42,20 @@ function introduceStreamers(personObject: {
 }
 
 console.log(streamersInAndorra.forEach(introduceStreamers));
+
+// ****** Interfaces **********
+interface Developer {
+  name: string,
+  age?: number, // optional
+  stack: string[],
+  remote: boolean,
+}
+
+const frontender: Developer = {
+  name: "Risingdana",
+  stack: ["JavaScript ES6", "React", "SASS", "HTML5"],
+  remote: true
+};
+
+frontender.age = 20;
+console.table(frontender);
