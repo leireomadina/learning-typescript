@@ -46,8 +46,8 @@ sayHi("Dr. Cho");
    * @returns The multiplication of `a` and `b`
    *
 */
-function multiply(a: number, b: number): number { //hover on parameters to get the description
+function multiplyNumbers(a: number, b: number): number { //hover on parameters to get the description
   return a * b; 
 }
-console.log(multiply(2, 3));
+console.log(multiplyNumbers(2, 3));
 

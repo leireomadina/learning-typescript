@@ -36,6 +36,40 @@ var ironMaidenVocalist = ironMaidenMember.Bruce;
 console.log("I love listening to " + ironMaidenVocalist + "'s voice.");
 var lolWins = 234;
 var lolLosses = lolWins; // valid
-console.log(lolWins);
-console.log(lolLosses);
-var lolTeam;
+console.log(lolLosses); // 234
+var lolTeam = {
+    name: "C9",
+    wins: 23,
+    losses: 12,
+    toplaner: {
+        name: "Fudge",
+        age: 18,
+        isBanned: false
+    },
+    jungler: {
+        name: "Blaber",
+        age: 21,
+        isBanned: false
+    },
+    midlaner: {
+        name: "Perkz",
+        age: 23,
+        isBanned: false
+    }
+};
+var startingPoint = [25.2, 40, "N", 67.2, 12, "E"];
+var destination = [3.6, 51, "S", 5.7, 10, "W"];
+function multiply(num1, num2) {
+    return num1 * num2;
+}
+function divide(num1, num2) {
+    return num1 / num2;
+}
+function printMatch(callback) {
+    var multiplyValues = callback(2, 5);
+    var divideValues = callback(10, 2);
+    console.log("Let's " + callback.name + " 2 and 5: the result is " + multiplyValues);
+    console.log("Let's " + callback.name + " 10 and 2: the result is " + divideValues);
+}
+console.log(printMatch(multiply));
+console.log(printMatch(divide));
