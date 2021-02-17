@@ -1,11 +1,12 @@
 // ****** Parameter Type Annotations + Optional parameters ******
-function sayHello(name: string, surname?) {
-  // surname: any type and optional parameter
-  console.log(`Hello, ${name} ${surname || "Doe"}`);
-}
-sayHello("Turanga", 123); // Hello, Turanga 123
+
+// function sayHello(name: string, surname?) {
+//   // surname: any type and optional parameter, not working on strict mode
+//   console.log(`Hello, ${name} ${surname || "Doe"}`);
+// }
+// sayHello("Turanga", 123); // Hello, Turanga 123
 // sayHello(123, 321); // throws error
-sayHello("Turanga"); // no error, surname is optional cause of the "?"
+// sayHello("Turanga"); // no error, surname is optional cause of the "?"
 // sayHello(); // throws error: no arguments
 
 // ****** Default parameters ******

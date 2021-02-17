@@ -4,6 +4,8 @@ let myCats: number = 0;
 // myCats = "Rengar"; // throws error: can't reassign a variable to a value of a different type
 const areUnicornReal: boolean = false;
 let sentence: string = `My name is ${myName} and I have ${myCats} cats.`;
+let card: string | number = "Q"; // two possible types with OR operator
+card = 4;
 
 let random; // any type
 random = "whatever!";

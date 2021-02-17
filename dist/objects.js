@@ -1,5 +1,6 @@
+"use strict";
 // ****** Objects **********
-var streamersInAndorra = [
+let streamersInAndorra = [
     {
         name: "Rubius",
         age: 30,
@@ -7,23 +8,23 @@ var streamersInAndorra = [
         // game: "Pokemon" // throws error
         games: {
             name: "Pokemon",
-            isToxic: false
-        }
+            isToxic: false,
+        },
     },
     {
         name: "El Millor",
         age: 27,
         games: {
             name: "LoL",
-            isToxic: true
-        }
+            isToxic: true,
+        },
     },
 ];
 function introduceStreamers(personObject) {
-    var output = "";
-    output += personObject.name + " has " + personObject.age + " years old and lives in Andorra while playing " + personObject.games.name + ". ";
+    let output = "";
+    output += `${personObject.name} has ${personObject.age} years old and lives in Andorra while playing ${personObject.games.name}. `;
     if (personObject.games.isToxic) {
-        output += "Btw he is pretty toxic.";
+        output += `Btw he is pretty toxic.`;
     }
     console.log(output);
 }

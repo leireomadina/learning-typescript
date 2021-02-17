@@ -12,7 +12,7 @@ These are the resources I am using so far for this purpose:
 - [Code Academy](https://www.codecademy.com/learn/learn-typescript).
 - [Official TypeScript documentation](https://www.typescriptlang.org/docs/)
 - Fernando Herrera's TypeScript lessons in Udemy: [Angular course](https://www.udemy.com/course/angular-fernando-herrera/).
-
+- [Tackling TypeScript](https://exploringjs.com/tackling-ts/toc.html) book
 
 ---
 

@@ -1,38 +1,38 @@
+"use strict";
 // ****** Parameter Type Annotations + Optional parameters ******
-function sayHello(name, surname) {
-    // surname: any type
-    console.log("Hello, " + name + " " + (surname || "Doe"));
-}
-sayHello("Turanga", 123); // Hello, Turanga 123
+// function sayHello(name: string, surname?) {
+//   // surname: any type and optional parameter, not working on strict mode
+//   console.log(`Hello, ${name} ${surname || "Doe"}`);
+// }
+// sayHello("Turanga", 123); // Hello, Turanga 123
 // sayHello(123, 321); // throws error
-sayHello("Turanga"); // no error, surname is optional cause of the "?"
+// sayHello("Turanga"); // no error, surname is optional cause of the "?"
 // sayHello(); // throws error: no arguments
 // ****** Default parameters ******
-function sayGoodbye(name) {
-    if (name === void 0) { name = "Fry"; }
+function sayGoodbye(name = "Fry") {
     // infers string or undefined values: cleaner than optional parameters
-    console.log("Goodbye, " + name + ".");
+    console.log(`Goodbye, ${name}.`);
 }
 sayGoodbye("Bender"); // Goodbye, Bender.
 sayGoodbye(); // Goodbye, Fry
 // sayGoodbye(123); // throws error
 // ****** Return Types: implicit and explicit ******
 function countCats(numCats) {
-    return "There are " + numCats + " cats at her house."; //inferring return type: string
+    return `There are ${numCats} cats at her house.`; //inferring return type: string
 }
 // let numberOfCats: number = countCats(3); // throws error: infers a string return value
-var numberOfCats = countCats(3); // There are 3 cats at her house.
+let numberOfCats = countCats(3); // There are 3 cats at her house.
 console.log(numberOfCats);
 function countDogs(numDogs) {
     // explicit value: must return a string
     // return 34; // throws error
-    return "There are " + numDogs + " dogs at her house.";
+    return `There are ${numDogs} dogs at her house.`;
 }
 // ****** Void return type ******
 function sayHi(name) {
-    console.log("Hello, " + name);
+    console.log(`Hello, ${name}`);
 }
-sayHi("Leela");
+sayHi("Dr. Cho");
 // ****** How to document functions ******
 /**
    * Returns the multiplication of two numbers.
@@ -42,7 +42,7 @@ sayHi("Leela");
    * @returns The multiplication of `a` and `b`
    *
 */
-function multiply(a, b) {
+function multiplyNumbers(a, b) {
     return a * b;
 }
-console.log(multiply(2, 3));
+console.log(multiplyNumbers(2, 3));

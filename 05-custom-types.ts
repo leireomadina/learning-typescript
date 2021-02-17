@@ -82,10 +82,10 @@ let destination: Coordinates = [3.6, 51, "S", 5.7, 10, "W"];
 
 // ****** Function types **********
 type multiplyTwoNumbersFunction = (arg0: number, arg1: number) => number;
-function multiply (num1, num2) {
+function multiply (num1: number, num2: number) {
   return num1 * num2;
 }
-function divide (num1, num2) {
+function divide (num1: number, num2: number) {
   return num1 / num2;
 }
 function printMatch(callback: multiplyTwoNumbersFunction):void {
