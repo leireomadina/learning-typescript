@@ -59,3 +59,37 @@ const frontender: Developer = {
 
 frontender.age = 20;
 console.table(frontender);
+
+
+// ****** Desestructuring objects **********
+interface Computer {
+  cpu: string,
+  windows: number,
+  ram: number,
+  gpu: GpuDetails
+}
+
+interface GpuDetails {
+  integrated: boolean,
+  brand: string
+}
+
+const myComputer: Computer = {
+  cpu: "Intel Core i7",
+  windows: 10,
+  ram: 16,
+  gpu: {
+    integrated: false,
+    brand: "Nvidia",
+  }
+}
+
+const {cpu, windows, ram, gpu} = myComputer; // desestructuring
+const {integrated, brand} = gpu;
+//can also be done in one line like this:
+// const {cpu, windows, ram, gpu: { integrated, brand}} = myComputer;
+
+console.log(`The CPU model is ${cpu}.`);
+console.log(`The operative system is Windows ${windows}.`);
+console.log(`The RAM component has ${ram} GB.`)
+console.log(`The GPU is a ${brand} model.`)
