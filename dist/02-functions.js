@@ -84,3 +84,21 @@ const superHero = {
 };
 const address = superHero.showAddress();
 console.log(address); // Spiderman, NY, USA
+const skyrim = {
+    name: "Skyrim",
+    price: 15
+};
+const farCry5 = {
+    name: "Far Cry 5",
+    price: 25
+};
+function calculateTaxes(games) {
+    let total = 0;
+    games.forEach(({ price }) => {
+        total += price;
+    });
+    return [total, total * 0.21];
+}
+const gamesToBuy = [skyrim, farCry5];
+const [total, taxes] = calculateTaxes(gamesToBuy);
+console.log(`We need to pay ${taxes} € of taxes and a total of ${total} €.`);

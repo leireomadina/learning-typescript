@@ -71,8 +71,8 @@ Perkz used ignite.
 */
 // ****** Desestructuring arrays **********
 const xFilesCharacters = ["Dana Scully", "Fox Mulder", "Walter Skinner", "Cigarette Smoking Man"];
-const [p1, p2, p3, p4] = xFilesCharacters;
-console.log(`Character 1: ${p1}.`);
+const [p1, , , p4] = xFilesCharacters; // desestructuring 
+console.log(`Character 1: ${p1}.`); // Character 1: Dana Scully.
 console.log(`Character 2: ${xFilesCharacters[1]}.`);
 console.log(`Character 3: ${xFilesCharacters[2]}.`);
-console.log(`Character 4: ${p4}.`);
+console.log(`Character 4: ${p4}.`); // Character 4: Cigarette Smoking Man.

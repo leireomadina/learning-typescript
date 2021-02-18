@@ -127,3 +127,32 @@ const superHero: superHero = {
 
 const address = superHero.showAddress();
 console.log(address); // Spiderman, NY, USA
+
+// ****** Desestructuring arguments ******
+interface Game {
+  name: string;
+  price: number;
+}
+
+const skyrim: Game = {
+  name: "Skyrim",
+  price: 15
+}
+
+const farCry5: Game = {
+  name: "Far Cry 5",
+  price: 25
+}
+
+function calculateTaxes(games: Game[]): [number, number] {
+  let total = 0;
+  games.forEach(({ price }) => { // desestructuring an argument
+    total += price;
+  })
+  return [total, total * 0.21];
+}
+
+const gamesToBuy = [skyrim, farCry5];
+const [total, taxes] = calculateTaxes(gamesToBuy); //desestructuring an array
+console.log(`We need to pay ${taxes} € of taxes and a total of ${total} €.`);
+
