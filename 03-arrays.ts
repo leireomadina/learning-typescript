@@ -75,3 +75,12 @@ Perkz got a kill at minute 29.
 Perkz used ignite.
 */
 
+// ****** Desestructuring arrays **********
+const xFilesCharacters: string[] = ["Dana Scully", "Fox Mulder", "Walter Skinner", "Cigarette Smoking Man"];
+const [p1, , , p4] = xFilesCharacters; // desestructuring 
+
+console.log(`Character 1: ${p1}.`); // Character 1: Dana Scully.
+console.log(`Character 2: ${xFilesCharacters[1]}.`);
+console.log(`Character 3: ${xFilesCharacters[2]}.`);
+console.log(`Character 4: ${p4}.`); // Character 4: Cigarette Smoking Man.
+

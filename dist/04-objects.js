@@ -47,6 +47,8 @@ const myComputer = {
 };
 const { cpu, windows, ram, gpu } = myComputer; // desestructuring
 const { integrated, brand } = gpu;
+//can also be done in one line like this:
+// const {cpu, windows, ram, gpu: { integrated, brand}} = myComputer;
 console.log(`The CPU model is ${cpu}.`);
 console.log(`The operative system is Windows ${windows}.`);
 console.log(`The RAM component has ${ram} GB.`);

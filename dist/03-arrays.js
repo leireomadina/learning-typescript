@@ -69,3 +69,10 @@ Fudge got a kill at minute 12.
 Perkz got a kill at minute 29.
 Perkz used ignite.
 */
+// ****** Desestructuring arrays **********
+const xFilesCharacters = ["Dana Scully", "Fox Mulder", "Walter Skinner", "Cigarette Smoking Man"];
+const [p1, p2, p3, p4] = xFilesCharacters;
+console.log(`Character 1: ${p1}.`);
+console.log(`Character 2: ${xFilesCharacters[1]}.`);
+console.log(`Character 3: ${xFilesCharacters[2]}.`);
+console.log(`Character 4: ${p4}.`);
