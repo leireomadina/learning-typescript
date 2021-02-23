@@ -100,5 +100,5 @@ function calculateTaxes(games) {
     return [total, total * 0.21];
 }
 const gamesToBuy = [skyrim, farCry5];
-const [total, taxes] = calculateTaxes(gamesToBuy);
+const [total, taxes] = calculateTaxes(gamesToBuy); //desestructuring an array
 console.log(`We need to pay ${taxes} € of taxes and a total of ${total} €.`);
