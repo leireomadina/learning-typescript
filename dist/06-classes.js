@@ -29,3 +29,11 @@ class Actor extends Person {
 }
 const tonyLeung = new Actor("Mr. Chow", 58, "male");
 console.log(tonyLeung);
+/* Actor {
+  name: 'Tony Leung',
+  address: 'Hong Kong',
+  bestCharacter: 'Mr. Chow',
+  age: 58,
+  gender: 'male'
+}
+*/
